@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Infinite Scroll</title>
     <!-- FAVICON -->
-    <link rel="icon" type="image/png "href="#">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
+    <link rel="icon" type="image/png " href="#" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="filter-container">
+      <input
+        type="text"
+        name="filter"
+        id="filter"
+        class="filter"
+        placeholder="filter posts here..."
+      />
+    </div>
+
+    <div id="post-container">
+      <div class="post">
+        <div class="number">1</div>
+        <div class="post-info">
+          <h2 class="post-title">post One</h2>
+          <p class="post-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            voluptates deserunt neque culpa ullam facilis quaerat veritatis
+            fugiat sint. Magnam?
+          </p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="number">2</div>
+        <div class="post-info">
+          <h2 class="post-title">post Two</h2>
+          <p class="post-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            voluptates deserunt neque culpa ullam facilis quaerat veritatis
+            fugiat sint. Magnam?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
